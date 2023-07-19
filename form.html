@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>FeedBack Form</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1 id="title">Banna-Cafe FeedBack Form</h1>
+    <p id="description">
+        Thank you for taking the time to help us improve the services at Banna-Cafe.
+    </p>
+
+    <form id="survey-form">
+        <fieldset>
+            <label id="name-label" for="name">Name<input type="text" id="name" required placeholder="Enter Your Name" /></label>
+        </fieldset>
+        <fieldset>
+            <label id="email-label" for="email">Email<input type="email" id="email" required placeholder="Enter Your Email" /></label>
+        </fieldset>
+
+        <fieldset>
+            <label id="number-label" for="number">Age (optional)<input type="number" id="number" placeholder="Enter Your Age"
+                    pattern="[0-9]" min="4" max="10" /></label>
+        </fieldset>
+        <fieldset>
+            <label for="profession">Which option best describes your current role?<select id="profession" >
+                <option disabled selected value>Select Current Role</option>
+                    <option>Student</option>
+                    <option>Full Time Learner</option>
+                    <option>Full Time Job</option>
+                    <option>Prefer Not To Say</option>
+                    <option>Other</option>
+                </select></label>
+        </fieldset>
+        <fieldset >
+            <p>Would you recommend banna-cafe to a friend?</p>
+            <label class="radiobtn" for="definitely" ><input type="radio" value="definitely" id="definitely" name="recommend">Definitely</label>
+            <label class="radiobtn" for="MayBe"><input type="radio" value="MayBe" id="MayBe" name="recommend">May Be</label>
+            <label class="radiobtn" for="NotSure"><input type="radio" value="NotSure" id="NotSure" name="recommend">Not Sure</label>
+        </fieldset>
+
+        <fieldset>
+            <label for="feature">What is your favorite feature of banna-cafe?<select id="dropdown">
+                    <option id="Challenges" disabled selected value>Challenges</option>
+                    <option id="Projects">Projects</option>
+                    <option>Community</option>
+                    <option>Discounts</option>
+                    
+                </select></label>
+        </fieldset>
+        <fieldset id="submit-form">
+            <p>What would you like to see improved? (Check all that apply)</p>
+            <label class="radiobtn" ><input value="1" type="checkbox">Front-end Projects</label>
+            <label class="radiobtn" ><input value="1" type="checkbox" >Back-end Projects</label>
+            <label class="radiobtn" ><input value="1" type="checkbox" >Data Visualization</label>
+            <label class="radiobtn" ><input value="1" type="checkbox" >Challenges</label>
+            <label class="radiobtn" ><input value="1" type="checkbox" >Open Source Community</label>
+            <label class="radiobtn" ><input value="1" type="checkbox" >Gitter Help rooms</label>
+            <label class="radiobtn" ><input value="1" type="checkbox" >Videos</label>
+            <label class="radiobtn" ><input value="1" type="checkbox" >City Meetups</label>
+            <label class="radiobtn" ><input value="1" type="checkbox" >Wiki</label>
+            <label class="radiobtn" ><input value="1" type="checkbox" >Forum</label>
+            <label class="radiobtn" ><input value="1" type="checkbox" >Additional Courses</label>
+            
+        </fieldset>
+        <fieldset>
+            <p>Any comments or suggestions?</p>
+            <textarea placeholder="Enter Your comments here"></textarea>
+        </fieldset>
+        <fieldset>
+            <input type="submit" id="submit">
+        </fieldset>
+    </form>
+
+    </div>
+    ]
+</body>
+
+</html>
